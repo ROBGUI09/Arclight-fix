@@ -1,12 +1,4 @@
 pluginManagement {
-	repositories {
-        maven { url "https://maven.fabricmc.net/" }
-        maven { url "https://maven.architectury.dev/" }
-        maven { url "https://repo.spongepowered.org/repository/forge-proxy/" }
-    }
-}
-
-pluginManagement {
     repositories {
         maven { url "https://maven.fabricmc.net/" }
         maven { url "https://maven.architectury.dev/" }
