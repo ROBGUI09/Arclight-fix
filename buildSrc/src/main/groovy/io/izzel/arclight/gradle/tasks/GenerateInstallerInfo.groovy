@@ -119,7 +119,7 @@ class GenerateInstallerInfo extends DefaultTask {
             }
             return arts.collectEntries { [(it.toString()): ret.get(it.toString())] }
         }
-        def installerUrl = "https://files.minecraftforge.net/maven/net/minecraftforge/forge/$minecraftVersion-$forgeVersion/forge-$minecraftVersion-$forgeVersion-installer.jar"
+        def installerUrl = "https://repo.spongepowered.org/repository/forge-proxy/net/minecraftforge/forge/$minecraftVersion-$forgeVersion/forge-$minecraftVersion-$forgeVersion-installer.jar"
         def tmpInstaller = Files.createTempFile("installer", "jar")
         Utils.download(installerUrl, tmpInstaller.toFile())
         def neoforgeUrl = "https://maven.neoforged.net/releases/net/neoforged/neoforge/$neoforgeVersion/neoforge-$neoforgeVersion-installer.jar"
